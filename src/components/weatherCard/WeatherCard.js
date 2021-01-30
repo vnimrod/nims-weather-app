@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './WeatherCard.css'
+import './WeatherCard.css';
 
 const WeatherCard = ({ weather }) => {
   const dateBuilder = (d) => {
@@ -38,15 +38,23 @@ const WeatherCard = ({ weather }) => {
 
   return (
     <div className="WeatherCard">
-      <div className="WeatherCard__items">
-        <div className="WeatherCard__items__location">
-          {weather.name}, {weather.sys.country}
+      <div className="WeatherCard__container">
+        <div className="WeatherCard__items">
+          <div className="WeatherCard__items__location">
+            {weather.name}, {weather.sys.country}
+          </div>
+          <div className="WeatherCard__items__date">
+            {dateBuilder(new Date())}
+          </div>
         </div>
-        <div className="WeatherCard__items__date">{dateBuilder(new Date())}</div>
-      </div>
-      <div className="WeatherCard__items">
-        <div className="WeatherCard__items__temp">{Math.round(weather.main.temp)}°c</div>
-        <div className="WeatherCard__items__weather">{weather.weather[0].main}</div>
+        <div className="WeatherCard__items">
+          <div className="WeatherCard__items__temp">
+            {Math.round(weather.main.temp)}°c
+          </div>
+          <div className="WeatherCard__items__weather">
+            {weather.weather[0].main}
+          </div>
+        </div>
       </div>
     </div>
   );
