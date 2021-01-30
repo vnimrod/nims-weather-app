@@ -1,0 +1,28 @@
+.WeatherCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: bold;
+}
+
+.WeatherCard__items{
+  padding:10px;
+}
+
+.WeatherCard__items__location{
+  font-size: 35px;
+}
+
+.WeatherCard__items__date{
+  font-size: 25px;
+}
+
+.WeatherCard__items__temp{
+  font-size: 50px;
+}
+
+.WeatherCard__items__weather{
+  font-size: 25px;
+}
