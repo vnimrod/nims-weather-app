@@ -2,7 +2,7 @@
 
 ## A site that displays the weather.
 
-Deployment link: https://weinstein-nims-chat-app-client.herokuapp.com/
+Deployment link: https://nims-weather-app.web.app/
 
 #### Technologies:
 - React.js
